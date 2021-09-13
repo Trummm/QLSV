@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quản lý DS sinh viên</title>
+</head>
+<body onload="renderListStudent()">
+    <div class="main">
+        <div class="main-left">
+            <h1>Form Nhập</h1>
+    
+            <input id="fullName" type="text" placeholder="Họ và Tên" class="input-text">
+            <span id="fullNameError" class="input-item"></span>
+            <input id="Code" type="text" placeholder="Mã SV" class="input-text">
+            <span id="codeError" class="input-item"></span>
+            <input id="Address" type="text" placeholder="Địa chỉ" class="input-text">
+            <span id="addressError" class="input-item"></span>
+            <input id="phone" type="text" placeholder="SĐT" class="input-text">
+            <span id="phoneError" class="input-item"></span>
+            <div class="btn">
+                <button class="btn-item" onclick="save()">LƯU</button>
+            </div>
+        </div>
+    
+        <div class="main-right" id="right">
+            <h1>Danh sách sinh viên</h1>
+            <table class="table" id="list-student">
+                
+            </table>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="main.js"></script>
+</body>
+</html>
